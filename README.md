@@ -1,9 +1,8 @@
 # Goalkeeper
-This is the first Java app that i made in Android Studio.
+This is the first app with Java functionality that I made in Android Studio.
 
 ## Description
 The app is puroposed to keep the score at a football match.
 
-
 ## Screenshots
-<img src="screenshots/Goalkeepeer.png" width=100>
+<img src="screenshots/GoalKeeper.png" width=200>
