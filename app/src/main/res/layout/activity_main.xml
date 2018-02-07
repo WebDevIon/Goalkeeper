@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.goalkeeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="80dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TeamText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nameTeamA"/>
+
+                <TextView
+                    android:id="@+id/points_team_a"
+                    style="@style/PointText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_big_football_player_kicking_ball_icon"
+                    android:text="@string/pointsTeamA"
+                    android:freezesText="true"/>
+
+                <TextView
+                    android:id="@+id/fouls_team_a"
+                    style="@style/FoulText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_big_soccer_referee_calling_foul_icon"
+                    android:text="@string/foulsTeamA"
+                    android:freezesText="true"/>
+
+                <Button
+                    style="@style/pointButton"
+                    android:layout_width="-1dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_football_player_kicking_ball_icon"
+                    android:onClick="setScoreTeamA"
+                    android:text="@string/addOnePoint"/>
+
+                <Button
+                    style="@style/pointButton"
+                    android:layout_width="-1dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_soccer_referee_calling_foul_icon"
+                    android:onClick="setFoulTeamA"
+                    android:text="@string/addOneFoul"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="-1dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TeamText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nameTeamB"/>
+
+                <TextView
+                    android:id="@+id/points_team_b"
+                    style="@style/PointText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_big_football_player_kicking_ball_icon"
+                    android:text="@string/pointsTeamB"
+                    android:freezesText="true"/>
+
+                <TextView
+                    android:id="@+id/fouls_team_b"
+                    style="@style/FoulText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_big_soccer_referee_calling_foul_icon"
+                    android:text="@string/foulsTeamB"
+                    android:freezesText="true"/>
+
+                <Button
+                    style="@style/pointButton"
+                    android:layout_width="-1dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_football_player_kicking_ball_icon"
+                    android:onClick="setScoreTeamB"
+                    android:text="@string/addOnePoint"/>
+
+                <Button
+                    style="@style/pointButton"
+                    android:layout_width="-1dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_soccer_referee_calling_foul_icon"
+                    android:onClick="setFoulTeamB"
+                    android:text="@string/addOneFoul"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="resetAll"
+            android:text="@string/resetButton"/>
+
+    </LinearLayout>
+
+</ScrollView>

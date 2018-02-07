@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Goalkeeper</string>
+    <string name="nameTeamA">Team A</string>
+    <string name="nameTeamB">Team B</string>
+    <string name="pointsTeamA">0</string>
+    <string name="pointsTeamB">0</string>
+    <string name="foulsTeamA">0</string>
+    <string name="foulsTeamB">0</string>
+    <string name="addOnePoint">+1 point</string>
+    <string name="addOneFoul">+1 foul</string>
+    <string name="resetButton">Reset</string>
+</resources>
